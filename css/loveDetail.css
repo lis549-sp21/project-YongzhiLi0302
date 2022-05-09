@@ -1,6 +1,34 @@
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .mySlides {display: none}
+
+.container {
+  margin: 2% 10% 0 10%;
+}
+
+nav > ul {
+  display: flex;
+  gap: 7%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li > a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.selectedNav {
+  color: #1A3FC0
+}
 
 img {
   vertical-align: middle;
