@@ -43,7 +43,6 @@ li > a {
 .title {
   font-size: 80px;
   line-height: 128px;
-  margin-top: 100px;
 }
 
 .lastWordTitle {
@@ -61,7 +60,7 @@ li > a {
 
 .thirdRowContainer {
   position: relative;
-  margin-top: 100px;
+  margin-top: 3rem;
 }
 
 .thirdRowContainer > * {
