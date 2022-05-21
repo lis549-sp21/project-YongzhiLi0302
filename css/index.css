@@ -1,31 +1,33 @@
+/* default view */
 body {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 16px;
+  background-color: #FFFDFD;
 }
 
 button {
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   color: #1A3FC0;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .container {
-  margin: 2% 10% 0 10%;
+  margin: 8% 4% 40% 4%;
 }
 
 nav > ul {
   display: flex;
-  gap: 7%;
+  gap: 8%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -41,59 +43,95 @@ li > a {
 }
 
 .title {
-  font-size: 80px;
-  line-height: 128px;
+  font-size: 32px;
+  line-height: 48px;
+  margin-top: -12px;
+  margin-right: 8%
 }
 
 .lastWordTitle {
   color: #1A3FC0;
 }
 
+.lottie {
+  height: 108px;
+}
+
 .logo {
- margin-top: 70px;
+margin-top: 40px;
+margin-left: -60%;
 }
 
 .secondRowContainer {
- display: flex;
- gap: 10rem;
+display: flex;
+flex-direction: column-reverse;
+width: 100%;
+justify-content: center;
+}
+
+img {
+  width: 100%;
 }
 
 .thirdRowContainer {
-  position: relative;
-  margin-top: 3rem;
+  position: sticky;
+  margin:auto;
 }
 
-.thirdRowContainer > * {
-  position: absolute;
+.catImagesContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1rem;
+}
+.catImage {
+  position:relative;
 }
 
-.rightImage {
-  left: 53%;
-}
-
-.leftImage:hover, .rightImage:hover {
+.catImage:hover, .catImage:hover {
   transform: scale(0.9);
   transition: all .8s ease-in-out;
 }
 
 .midCircle {
   position: absolute;
-  left: 22rem;
-  top: 7rem;
+  top: 30%;
   z-index: -1;
 }
 
-.fire {
-  top: 76rem;
-  position: absolute;
+.circle {
+  position: relative;
+  left: -50%;
+  top: 30%;
+}
+
+.fireContainer {
+  top: 68rem;
   display: flex;
-  left: 43rem;
+  left: 50%;
+}
+
+.fire {
+  position: relative;
+  margin: auto;
+  margin-top: 4rem;
 }
 
 .rectangle {
   position: relative;
-  top: 49rem;
-  margin-bottom: 64rem;
+  justify-content: center;
+  top: 2rem;
+}
+
+.compBg {
+  width: 100%;
+  height: 100%;
+}
+
+.compUI {
+  display: flex;
+  width: auto;
+  justify-content: space-evenly;
 }
 
 .rectangle > img {
@@ -115,4 +153,93 @@ li > a {
 .rectangle > .vs {
   position: absolute;
   left: 35rem;
+}
+
+@media (min-width: 598px) {
+  .container {
+    margin: 8% 4% 20% 4%;
+  }
+
+  .secondRowContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: space-between;
+  }
+
+  .title {
+    font-size: 56px;
+    line-height: 64px;
+    margin-top: 0px;
+    margin-left: 0%;
+    width: 56%;
+  }
+
+  .logo {
+    margin-top: 70px;
+  }
+
+  .lottie {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 4% 10% 8% 10%;
+  }
+
+  .logo {
+    margin-top: 40px;
+  }
+
+  .thirdRowContainer {
+    position: sticky;
+    margin:auto;
+    margin-top: 3rem;
+  }
+
+  .catImagesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .midCircle {
+    position: absolute;
+    left: 50%;
+    top: 2rem;
+    z-index: -1;
+  }
+
+  .circle {
+    position: relative;
+    left: -50%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .title {
+    font-size: 80px;
+    line-height: 128px;
+    margin-top: 0px;
+    margin-left: 0%;
+    width: 60%;
+  }
+
+
+  .logo {
+    margin-top: 70px;
+  }
+
+  .lottie {
+    height: 300px;
+  }
+
 }

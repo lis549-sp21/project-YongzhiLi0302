@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Angie Li">
     <meta name="description" content="A display of my cats">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>My Cute Cats</title>
@@ -31,28 +32,42 @@
                 </h1>
             </section>
             <section class="logo">
-                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_q58jqa8y.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                <lottie-player class="lottie" src="https://assets1.lottiefiles.com/packages/lf20_q58jqa8y.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
             </section>
         </section>
         <section class="thirdRowContainer">
-            <a href="daipyDetail.html" class="leftImage">
-                <img src="assets/Group 1.png" alt="Daipy, a 2-yr-old male cat">
-            </a>
+            <div class="catImagesContainer">
+               <div class="catImage">
+                <a href="daipyDetail.html">
+                    <img src="assets/Group 1.png" alt="Daipy, a 2-yr-old male cat">
+                </a>
+            </div>
+          <div class="catImage">
+                <a href="loveDetail.html">
+                    <img src="assets/Group 2.png" alt="Love, a 3-month-old kitten">
+                </a>
+            </div>
+            </div>
+            
             <section class="midCircle">
+                <div class="circle">
                 <img src="assets/Ellipse 1.png" alt="Decorative blue circle">
+            </div>
             </section>
-            <a href="loveDetail.html" class="rightImage">
-                <img src="assets/Group 2.png" alt="Love, a 3-month-old kitten">
-            </a>
+        
         </section>
-        <section class="fire">
+        <section class="fireContainer">
+            <div class="fire">
             <img src="assets/emojione_fire.png" alt="Decorating fire emoji">
+        </div>
         </section>
         <section class="rectangle">
-            <img src="assets/Rectangle 3.png" alt="Vote bar with options of I like Daipy versus I like">
+            <img class="compBg" src="assets/Rectangle 3.png" alt="Vote bar with options of I like Daipy versus I like">
+            <div class="compUI">
             <button class="daipy">I like Daipy</button>
             <p class="vs">V.S.</p>
             <button class="love">I like Love</button>
+        </div>
         </section>
     </section>
 </body>
