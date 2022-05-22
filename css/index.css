@@ -233,6 +233,11 @@ img {
     width: 60%;
   }
 
+  .midCircle {
+    position: absolute;
+    top: 18%;
+    z-index: -1;
+  }
 
   .logo {
     margin-top: 70px;
