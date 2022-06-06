@@ -5,7 +5,10 @@
     <meta name="author" content="Angie Li">
     <meta name="description" content="A display of my cats">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" 
+            type="image/png" 
+            href="assets/Favicon.png">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>My Cute Cats</title>
 </head>
@@ -37,17 +40,17 @@
         </section>
         <section class="thirdRowContainer">
             <div class="catImagesContainer">
-               <div class="catImage">
+               <div class="catImage" aria-label="This is a image of Daipy, a white cat">
                 <a href="daipyDetail.html">
                     <img src="assets/Group 1.png" alt="Daipy, a 2-yr-old male cat">
                 </a>
             </div>
-          <div class="catImage">
+          <div class="catImage" aria-label="This is a image of Love, a little kitten">
                 <a href="loveDetail.html">
                     <img src="assets/Group 2.png" alt="Love, a 3-month-old kitten">
                 </a>
             </div>
-            </div>
+            </div aria-label="Decorative circle">
             
             <section class="midCircle">
                 <div class="circle">
@@ -70,5 +73,12 @@
         </div>
         </section>
     </section>
+
+    <footer>
+        <p class="caption"> Copyright @ Yongzhi Li 2022</p>
+        <p class="caption"> Contact: yongzhi@uw.edu</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
