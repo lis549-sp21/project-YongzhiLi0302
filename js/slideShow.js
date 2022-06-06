@@ -1,3 +1,4 @@
+// The slideshow of cat images
 let slideIndex = 1;
 showSlides(slideIndex);
 
