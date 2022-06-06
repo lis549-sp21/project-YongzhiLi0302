@@ -27,7 +27,7 @@ body {
 
 .mySlides {display: none}
 
-.text-container > h1 {
+.text-container h1 {
   font-size: 48px;
 }
 
